@@ -7,6 +7,15 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "gridsome": "^0.7.0"
+    "gridsome": "^0.7.0",
+    "tailwindcss": "^1.2.0"
+  },
+  "version": "1.0.0",
+  "description": "Hydroponic Agriculture",
+  "main": "index.js",
+  "author": "Nick Hanigan <australian.nick@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.0"
   }
 }
