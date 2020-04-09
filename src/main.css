@@ -1,5 +1,21 @@
 @tailwind base;
 
+a {
+    @apply text-blue-600 underline;
+}
+
+@font-face {
+    font-family: IBM Plex Sans;
+    font-weight: 400;
+    src: ("~/assets/fonts/IBMPlexSans-Regular") format("woff");
+  }
+@font-face {
+    font-family: Literata;
+    font-weight: 400;
+    src: ("~/assets/fonts/Literata-Regular") format("woff");
+}
+
+
 @tailwind components;
 
 @tailwind utilities;

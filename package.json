@@ -1,21 +1,25 @@
 {
-  "name": "tc",
-  "private": true,
-  "scripts": {
-    "build": "gridsome build",
-    "develop": "gridsome develop",
-    "explore": "gridsome explore"
-  },
-  "dependencies": {
-    "gridsome": "^0.7.0",
-    "tailwindcss": "^1.2.0"
-  },
-  "version": "1.0.0",
-  "description": "Hydroponic Agriculture",
-  "main": "index.js",
-  "author": "Nick Hanigan <australian.nick@gmail.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.1.0"
-  }
+	"name": "Web Template V1",
+	"version": "1.0.0",
+	"private": true,
+	"description": "A corporate website with blog & contact form.",
+	"author": "Nick Hanigan <australian.nick@gmail.com>",
+	"scripts": {
+		"build": "gridsome build",
+		"test:unit": "vue-cli-service test:unit",
+		"develop": "gridsome develop",
+		"explore": "gridsome explore",
+		"test": "jest"
+	},
+	"main": "index.js",
+	"dependencies": {
+		"gridsome": "^0.7.0",
+		"tailwindcss": "^1.2.0"
+	},
+	"devDependencies": {
+		"@fullhuman/postcss-purgecss": "^2.1.0",
+		"@vue/cli-plugin-unit-jest": "^4.2.3",
+		"@vue/test-utils": "1.0.0-beta.31"
+	},
+	"license": "MIT"
 }

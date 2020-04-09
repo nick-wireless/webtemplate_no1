@@ -1,29 +1,35 @@
 <template>
   <Layout>
-
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
-
-    <h1>Hello, world!</h1>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-    </p>
-
-    <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
-
+    <div
+      class=" bg-cover "
+      style=" background-image=url(@/assets/images/home.jpg)"
+    >
+      <p class=" font-display font-medium italic ">
+        Testing
+      </p>
+      <h2 class=" font-serif font-headings font-semibold text-2xl h-8">
+        How does this look?
+      </h2>
+    </div>
+    <div class=" w-auto ">
+      <g-image src="~/assets/images/home.jpg"></g-image>
+    </div>
   </Layout>
 </template>
 
 <script>
 export default {
   metaInfo: {
-    title: 'Hello, world!'
+    title: "Home"
+  },
+  props: {
+    msg: {
+      type: String,
+      required: false,
+      default: "testing"
+    }
   }
-}
+};
 </script>
 
 <style>
