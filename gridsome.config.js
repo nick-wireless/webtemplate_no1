@@ -12,7 +12,7 @@ const postcssPlugins = [ tailwind() ]
 if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss(require('./purgecss.config.js')))
 
 module.exports = {
-	siteName: 'Web Template 1',
+	siteName: 'our website',
 	plugins: [],
 	css: {
 		loaderOptions: {
