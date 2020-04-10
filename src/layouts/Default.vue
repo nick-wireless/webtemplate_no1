@@ -3,12 +3,14 @@
     <!-- The content: including Nav Header & Slot -->
     <header class=" max-w-screen-md mx-auto">
       <div
-        class=" absolute z-40 md:flex justify-between w-screen max-w-screen-md items-baseline"
+        class=" absolute z-40 md:flex justify-between w-screen max-w-screen-md items-center"
       >
-        <strong class=" font-serif font-headings flex items-center">
+        <strong
+          class=" font-serif font-headings md:flex items-center align-middle"
+        >
           <div>
             <svg
-              class="w-12 h-12 m-8"
+              class="w-12 h-12 m-8 md:ml-16"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -21,13 +23,33 @@
               </g>
             </svg>
           </div>
-          <g-link class="nav__link text-xl md:text-4xl " to="/">{{
-            $static.metadata.siteName
-          }}</g-link>
+          <g-link
+            class="no-underline h-12 text-white m-8 text-4xl md:text-4xl w-64 "
+            to="/"
+            >{{ $static.metadata.siteName }}</g-link
+          >
         </strong>
-        <nav class="nav">
-          <g-link class="nav__link" to="/">Home</g-link>
-          <g-link class="nav__link" to="/about/">About</g-link>
+        <nav class="mt-4 ml-8 text-lg ">
+          <g-link
+            class="no-underline align-middle hover:underline text-white"
+            to="/"
+          >
+            {{ home }}
+          </g-link>
+
+          <g-link
+            class="no-underline align-middle ml-4 hover:underline text-white"
+            to="/about/"
+          >
+            {{ about }}
+          </g-link>
+
+          <g-link
+            class="no-underline align-middle ml-4 mr-8 hover:underline text-white"
+            to="/contactx/"
+          >
+            {{ contact }}
+          </g-link>
         </nav>
       </div>
     </header>
@@ -45,15 +67,20 @@ query {
 }
 </static-query>
 
-<style>
-body {
-  @apply font-sans text-white;
-}
-.primary {
-  @apply text-white;
-}
+<script>
+export default {
+  data() {
+    return {
+      home: "Mission", // Home page
+      about: "People", // Equivalent to About
+      contact: "Contact"
+    };
+  }
+};
+</script>
 
-.nav__link {
-  @apply text-white;
+<style>
+header body {
+  @apply font-sans text-white antialiased;
 }
 </style>

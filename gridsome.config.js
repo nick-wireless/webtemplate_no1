@@ -13,6 +13,7 @@ if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss(require(
 
 module.exports = {
 	siteName: 'our website',
+	siteDescription: 'Lanching a professional business with a fast website.',
 	plugins: [],
 	css: {
 		loaderOptions: {
