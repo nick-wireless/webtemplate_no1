@@ -3,7 +3,7 @@
 		<!-- The content: including Nav Header & Slot -->
 		<header class=" max-w-screen-md mx-auto">
 			<div class=" absolute z-40 md:flex justify-between w-screen max-w-screen-md items-center">
-				<strong class=" md:flex items-center align-middle">
+				<strong class=" md:flex items-center">
 					<div>
 						<svg class="w-12 h-12 m-8 md:ml-16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 							<g class="fill-current text-teal-700">
