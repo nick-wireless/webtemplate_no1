@@ -8,17 +8,20 @@
 			<div class="absolute bg-teal-900 opacity-75 min-h-screen min-w-full text-white z-20"></div>
 		</div>
 		<div class="h-56 relative"></div>
-		<div
-			id="corporate-address"
-			class="inline-block relative z-30 font-sans font-display font-normal text-white text-lg leading-relaxed text-right px-10 mt-4 w-screen "
-		>
-			<div>Corporate Name Pty Ltd</div>
-			<div>+61 8 8981 5555</div>
-			<div>GPO Box 1000</div>
-			<div>Darwin, Northern Territory</div>
-			<div>ABN: 12 345 6789</div>
-		</div>
-		<MailForm class="relative z-30"></MailForm>
+		<section class=" flex flex-col md:flex-row md:justify-center">
+			<!-- Form to collect email & phone number. -->
+			<MailForm class="relative z-30"></MailForm>
+			<div
+				id="corporate-address"
+				class="inline-block relative z-30 px-10 mt-4 font-sans font-display font-normal text-white text-lg leading-relaxed text-right  "
+			>
+				<div>Corporate Name Pty Ltd</div>
+				<div>+61 8 8981 5555</div>
+				<div>GPO Box 1000</div>
+				<div>Darwin, Northern Territory</div>
+				<div>ABN: 12 345 6789</div>
+			</div>
+		</section>
 	</Layout>
 </template>
 
