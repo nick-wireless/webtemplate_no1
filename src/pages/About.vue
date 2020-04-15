@@ -1,11 +1,11 @@
 <template>
 	<Layout>
-		<div id="background-cover">
+		<div id="background-cover" class="flex w-screen max-w-md ">
 			<g-image
-				class="absolute min-h-screen min-w-screen object-cover z-10"
+				class="absolute h-screen min-w-screen object-cover z-10 "
 				src="~/assets/images/people.jpg"
 			></g-image>
-			<div class="absolute bg-teal-900 opacity-75 min-h-screen min-w-full text-white z-20"></div>
+			<div class="absolute min-h-screen min-w-full bg-teal-900 opacity-75 text-white z-20"></div>
 		</div>
 		<div class="h-56 relative"></div>
 		<div>

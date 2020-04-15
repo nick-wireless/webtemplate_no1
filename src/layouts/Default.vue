@@ -1,7 +1,7 @@
 <template>
-	<div class="layout bg-teal-500 h-screen">
+	<div class="layout ">
 		<!-- The content: including Nav Header & Slot -->
-		<header class=" max-w-screen-md mx-auto">
+		<header class=" max-w-screen-md">
 			<div class=" absolute z-40 md:flex justify-between w-screen max-w-screen-md items-center">
 				<strong class=" md:flex items-center">
 					<div>
@@ -45,7 +45,7 @@
 				</nav>
 			</div>
 		</header>
-		<body class="max-w-screen-md mx-auto">
+		<body class="max-w-screen-md">
 			<slot />
 		</body>
 	</div>
@@ -74,5 +74,9 @@ export default {
 <style>
 header body {
 	@apply font-sans text-white antialiased;
+}
+
+body {
+	overflow: none;
 }
 </style>

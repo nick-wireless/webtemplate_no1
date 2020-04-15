@@ -1,19 +1,16 @@
 <template>
 	<Layout>
-		<div id="background-cover">
-			<g-image
-				class="absolute min-h-screen min-w-screen object-cover z-10"
-				src="~/assets/images/home.jpg"
-			></g-image>
-			<div class="absolute bg-teal-900 opacity-75 min-h-screen min-w-full text-white z-20"></div>
+		<div id="background-cover" class="flex w-screen max-w-md ">
+			<g-image class="absolute h-screen min-w-screen object-cover z-10 " src="~/assets/images/home.jpg"></g-image>
+			<div class="absolute min-h-screen min-w-full bg-teal-900 opacity-75 text-white z-20"></div>
 		</div>
 		<div class="h-56 relative"></div>
 		<div>
-			<h2
+			<div
 				class=" inline-block relative z-30 mt-8 px-8 md:px-16 w-screen font-sans font-display text-white font-bold text-3xl tracking-wider text-right"
 			>
 				{{ heading1 }}
-			</h2>
+			</div>
 			<h3
 				class=" inline-block relative z-30 mt-8 px-8 md:px-16 w-screen font-sans font-display text-white font-semibold text-2xl tracking-wide text-right leading-loose"
 			>

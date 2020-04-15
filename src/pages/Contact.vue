@@ -1,11 +1,8 @@
 <template>
 	<Layout>
-		<div id="background-cover">
-			<g-image
-				class="absolute min-h-screen min-w-screen object-cover z-10"
-				src="~/assets/images/contact.jpg"
-			></g-image>
-			<div class="absolute bg-teal-900 opacity-75 min-h-screen min-w-full text-white z-20"></div>
+		<div id="background-cover" class="flex w-screen max-w-md ">
+			<g-image class="absolute h-screen min-w-screen object-cover z-10 " src="~/assets/images/home.jpg"></g-image>
+			<div class="absolute min-h-screen min-w-full bg-teal-900 opacity-75 text-white z-20"></div>
 		</div>
 		<div class="h-56 relative"></div>
 		<section class=" flex flex-col md:flex-row md:justify-center">

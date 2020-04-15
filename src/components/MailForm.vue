@@ -7,7 +7,7 @@
 					<label class="inline-block self-center ml-6 mt-6 w-16">To:</label>
 					<div
 						class="inline-block self-center mt-6 w-48 font-serif font-headings font-light text-lg italic text-teal-700 "
-						>Dear Corporate,</div
+						>Darwin Office,</div
 					>
 				</div>
 				<div id="guestEmail" class="flex text-blue-800 font-sans font-display font-semibold">
