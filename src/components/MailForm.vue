@@ -10,7 +10,8 @@
       <div class="absolute inline-block right-0">
         <SendingIcon class=" w-12 h-12 p-2"></SendingIcon>
       </div>
-      <form action="" class="mt-2">
+      <form @submit.prevent="notify" class="mt-2">
+        <!-- To: Darwin Office -->
         <div class="flex text-blue-800 font-sans font-display font-semibold">
           <label class="inline-block self-center ml-6 mt-6 w-16">To:</label>
           <div
@@ -19,6 +20,7 @@
             Darwin Office,
           </div>
         </div>
+        <!-- From: guestEmail -->
         <div class="flex text-blue-800 font-sans font-display font-semibold">
           <label
             class="inline-block self-center ml-6 mt-4 w-16"
@@ -29,7 +31,6 @@
             id="guestEmail"
             class="inline-block mt-4 pl-2 mr-3 w-48 h-10 rounded"
             v-model="guestEmail"
-            type="email"
             autocomplete="email"
             placeholder="Your email here ..."
           />
@@ -45,8 +46,7 @@
           <input
             id="guestPhone"
             class="inline-block mt-4 pl-2 w-48 h-10 rounded"
-            v-model="guestPhone"
-            type="number"
+            v-model.number="guestPhone"
             autocomplete="tel"
             placeholder="Your phone here ..."
           />
@@ -54,7 +54,10 @@
         <div class="flex items-center justify-end">
           <button
             id="nextButton"
+            type="submit"
+            name="button"
             class="inline-block h-12 p-3 font-display text-purple-500 "
+            :disabled="!hasTwoInputs"
           >
             Next
           </button>
@@ -73,10 +76,40 @@ export default {
   components: { SendingIcon, NextIcon },
   data() {
     return {
-      guestEmail: "",
-      guestPhone: ""
+      guestEmail: null,
+      guestPhone: null
       // guestPhone: Number
     };
+  },
+  computed: {
+    phoneIsValid() {
+      return typeof this.guestPhone === "number";
+    },
+    emailIsValid() {
+      var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+      if (filter.test(this.guestEmail)) {
+        return true;
+      }
+      return false;
+    },
+    hasTwoInputs() {
+      return this.guestEmail !== null && this.guestPhone !== null;
+    },
+    formIsValid() {
+      return this.emailIsValid && this.phoneIsValid;
+    }
+  },
+  methods: {
+    notify() {
+      if (this.formIsValid) {
+        console.log(
+          "Email is: " + this.guestEmail,
+          "Phone is: " + this.guestPhone
+        );
+      } else {
+        console.log("An error found with the inputs.");
+      }
+    }
   }
 };
 </script>
@@ -86,3 +119,5 @@ export default {
   @apply fill-current text-gray-600;
 }
 </style>
+
+

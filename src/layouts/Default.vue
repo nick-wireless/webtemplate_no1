@@ -76,7 +76,6 @@ export default {
       home: "Mission", // Home page
       about: "People", // Equivalent to About
       contact: "Contact"
-      // currentImage: '~/assets/images/home.jpg'
     };
   }
 };
@@ -85,9 +84,5 @@ export default {
 <style>
 header body {
   @apply font-sans text-white antialiased;
-}
-
-body {
-  overflow: none;
 }
 </style>
