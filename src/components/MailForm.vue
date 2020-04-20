@@ -11,6 +11,7 @@
         <SendingIcon class=" w-12 h-12 p-2"></SendingIcon>
       </div>
       <form @submit.prevent="notify" class="mt-2">
+        <input type="hidden" name="form-name" value="contactForm" />
         <!-- To: Darwin Office -->
         <div class="flex text-blue-800 font-sans font-display font-semibold">
           <label class="inline-block self-center ml-6 mt-6 w-16">To:</label>
