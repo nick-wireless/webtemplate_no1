@@ -32,8 +32,3 @@ describe('MailForm', () => {
 // Test 6: another 'send' button should start an action (in this case console.log - later Netlify Form).
 // Test 7: when in error state, the field should retain focus & shake & have error styling.
 
-
-// Test 1 (guestPhone): has a minimum of 7 characters long.
-// Test 2 (guestPhone): it only contains valid characters, no letters or symbols.
-// Test 3 (guestEmail): it should have two parts either side of the '@' sign.
-// Test 4 (guestEmail): part 2, it should include a '.'
